@@ -1,16 +1,19 @@
 
+---
+
 ### **Repository Structure**
 
+```text
 ├── README.md                                   # Project overview and instructions
 ├── report/
 │   └── CaseStudyReport.pdf                     # Final multi-page case study report
 ├── notebooks/
 │   └── Guilan_High_Humidity_Materials.ipynb    # Full analysis and modeling workflow
 ├── data/
-│   ├── guilan_construction_materials.xlsx                 # Unprocessed raw dataset
-│   ├── guilan_construction_raw_and_norm.xlsx              # Cleaned + normalized dataset
+│   ├── guilan_construction_materials.xlsx                  # Unprocessed raw dataset
+│   ├── guilan_construction_raw_and_norm.xlsx               # Cleaned + normalized dataset
 │   └── guilan_construction_normalized_with_final_score.xlsx # Final scored dataset
-
+```
 
 ---
 
@@ -22,7 +25,7 @@ You can interact with it in the following ways:
 
 ---
 
-###**1. Read the Final Report**
+### **1. Read the Final Report**
 
 The complete, polished case study report is available at:
 
@@ -42,7 +45,7 @@ The report includes:
 
 ---
 
-###  **2. Explore the Analysis in the Jupyter Notebook**
+### **2. Explore the Analysis in the Jupyter Notebook**
 
 Open:
 
@@ -54,11 +57,11 @@ This notebook contains the full analytical workflow, including:
 
 * dataset cleaning & preprocessing
 * min–max normalization
-* engineered feature calculations
+* engineered feature calculations:
 
-  * MRI — Moisture Risk Index
-  * TSI — Thermal Sensitivity Index
-  * CDS — Construction Durability Score
+  * **MRI** — Moisture Risk Index
+  * **TSI** — Thermal Sensitivity Index
+  * **CDS** — Construction Durability Score
 * correlation matrix & visualizations
 * K-Means clustering
 * final scoring model & material ranking
@@ -86,4 +89,12 @@ All datasets used in this study are located in the `data/` directory.
 * **guilan_construction_normalized_with_final_score.xlsx**
   *Final processed dataset containing the climate suitability score for each material*
 
+---
+
+## **Author**
+
+**Nikoo Najafian**
+Construction Material Climate Suitability Case Study (2025)
+
+---
 
