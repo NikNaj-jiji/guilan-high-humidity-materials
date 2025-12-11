@@ -1,57 +1,89 @@
-# Construction Material Suitability in High-Humidity Environments  
-_Data-driven assessment for Guilan, Iran_
 
-## Project Overview
+### **Repository Structure**
 
-This project evaluates the suitability of common construction materials for the humid climate of Guilan Province (northern Iran).  
-Using engineered indices, normalization, exploratory data analysis, clustering, and a moisture-dominant scoring model, the study ranks both structural and finishing materials by their climate durability.
-
-This work was conducted as an **independent data science project** and applied directly to a real residential construction project in Lahijan, Guilan.
-
-## Repository Structure
-
-```text
-.
-├── README.md                     # Project overview and instructions
+├── README.md                                   # Project overview and instructions
 ├── report/
-│   └── CaseStudyReport.pdf       # Final case study report (multi-page, polished)
+│   └── CaseStudyReport.pdf                     # Final multi-page case study report
 ├── notebooks/
-│   └── Guilan_High_Humidity_Materials.ipynb  # Full analysis and modeling
+│   └── Guilan_High_Humidity_Materials.ipynb    # Full analysis and modeling workflow
 ├── data/
-│   └── guilan_construction_raw_and_norm.xlsx  # Raw + normalized materials dataset
+│   ├── guilan_construction_materials.xlsx                 # Unprocessed raw dataset
+│   ├── guilan_construction_raw_and_norm.xlsx              # Cleaned + normalized dataset
+│   └── guilan_construction_normalized_with_final_score.xlsx # Final scored dataset
 
-## How to Use This Repository
 
-This repository contains all components of the construction material climate-suitability analysis.  
+---
+
+## **How to Use This Repository**
+
+This repository contains all components of the **construction material climate-suitability analysis for high-humidity environments in Guilan (Lahijan)**.
+
 You can interact with it in the following ways:
 
-### 1. Read the Final Report
-The complete case study is available in:
+---
 
+###**1. Read the Final Report**
+
+The complete, polished case study report is available at:
+
+```
 report/CaseStudyReport.pdf
+```
 
-It includes the data collection methods, feature engineering, EDA, clustering, modeling, results, and recommendations.
+The report includes:
 
-### 2. Explore the Analysis in Jupyter Notebook
-Open: notebooks/LahijanConstructionCaseStudy.ipynb
+* data collection & preprocessing
+* feature engineering (MRI, TSI, CDS)
+* exploratory data analysis (EDA)
+* correlation analysis
+* clustering & scoring methodology
+* material ranking results
+* recommendations for construction in humid climates
 
+---
 
-This notebook contains:
+###  **2. Explore the Analysis in the Jupyter Notebook**
 
-- data preprocessing  
-- min–max normalization  
-- engineered feature calculations (MRI, TSI, CDS)  
-- correlation analysis  
-- clustering analysis  
-- final scoring model and ranking  
+Open:
 
-You may run the notebook locally using Jupyter, VS Code, or Google Colab.
+```
+notebooks/Guilan_High_Humidity_Materials.ipynb
+```
 
-### 3. Work with the Dataset
-The dataset used for this study is located in the data folder.
-In this folder you find three datasets:
-- guilan_construction_materials.xlsx --- Unprocessed dataset
-- guilan_construction_raw_and_norm.xlsx --- Clean Processed dataset used in the notebook
-- guilan_construction_normalized_with_final_score --- Final dataset that includes the final score for each material
+This notebook contains the full analytical workflow, including:
+
+* dataset cleaning & preprocessing
+* min–max normalization
+* engineered feature calculations
+
+  * MRI — Moisture Risk Index
+  * TSI — Thermal Sensitivity Index
+  * CDS — Construction Durability Score
+* correlation matrix & visualizations
+* K-Means clustering
+* final scoring model & material ranking
+
+You can run the notebook using:
+
+* **Jupyter Notebook**
+* **VS Code**
+* **Google Colab**
+
+---
+
+### **3. Work With the Dataset**
+
+All datasets used in this study are located in the `data/` directory.
+
+**Files:**
+
+* **guilan_construction_materials.xlsx**
+  *Unprocessed dataset (raw measurements)*
+
+* **guilan_construction_raw_and_norm.xlsx**
+  *Clean + normalized dataset used in the notebook*
+
+* **guilan_construction_normalized_with_final_score.xlsx**
+  *Final processed dataset containing the climate suitability score for each material*
 
 
